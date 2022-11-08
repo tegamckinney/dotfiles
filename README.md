@@ -1,6 +1,6 @@
 # Dotfiles
 
-Brendon Smith ([br3ndonland](https://github.com/br3ndonland))
+Tega McKinney ([tegamckinney](https://github.com/tegamckinney))
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -53,7 +53,7 @@ _bootstrap.sh_ is a shell script to automate setup of a new macOS or Linux devel
 
 ```sh
 STRAP_GIT_EMAIL="you@example.com" STRAP_GIT_NAME="Your Name" STRAP_GITHUB_USER="username" \
-  /usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/br3ndonland/dotfiles/HEAD/bootstrap.sh)"
+  /usr/bin/env bash -c "$(curl -fsSL https://raw.githubusercontent.com/tegamckinney/dotfiles/HEAD/bootstrap.sh)"
 ```
 
 The following environment variables can be used to configure _bootstrap.sh_, and should be either set before with [`export`](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#export), or inline within the command to run the script:
@@ -195,7 +195,7 @@ I have tried GitHub's cloud-hosted VSCode, called [Codespaces](https://docs.gith
   auth: none
   password: false
   cert: false
-  user-data-dir: /home/brendon/.dotfiles/vscode
+  user-data-dir: /home/tegamckinney/.dotfiles/vscode
   ```
 
 - Local machine
