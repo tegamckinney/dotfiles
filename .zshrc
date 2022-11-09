@@ -52,6 +52,17 @@ if [[ -d $HOMEBREW_PREFIX ]]; then
   eval $($HOMEBREW_PREFIX/bin/brew shellenv)
 fi
 
+### Antigen zsh plugin manager
+source $(brew --prefix)/share/antigen/antigen.zsh
+
+### Install zsh-nvm
+export NVM_COMPLETION=true
+export NVM_LAZY_LOAD=true
+export NVM_NO_USE=true
+export NVM_AUTO_USE=true
+antigen bundle lukechilds/zsh-nvm
+antigen bundle lukechilds/zsh-better-npm-completion
+
 ### exports
 if command -v codium &>/dev/null; then
   editor='codium --wait'
@@ -76,7 +87,11 @@ export \
   PATH=$PIPX_BIN:$GNU_FINDUTILS_BIN:$GNU_SED_BIN:$PATH
 
 ### aliases
-alias python='python3'
+
+### python
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 ### prompt: https://starship.rs
 eval $(starship init zsh)
