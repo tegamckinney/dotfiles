@@ -1,4 +1,5 @@
 cask_args appdir: "/Applications"
+tap "1password/tap"
 tap "aws/tap"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -59,6 +60,7 @@ brew "zsh"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
+cask "1password-cli"
 cask "1password"
 cask "android-sdk"
 cask "aws-vault"
