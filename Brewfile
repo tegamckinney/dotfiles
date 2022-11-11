@@ -42,7 +42,6 @@ brew "mas" if OS.mac?
 brew "openssh"
 brew "pinentry"
 brew "pnpm"
-brew "prettier"
 brew "pyenv"
 brew "redis"
 brew "ruby"
