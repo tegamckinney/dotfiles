@@ -20,7 +20,6 @@ brew "bash"
 brew "cfssl"
 brew "cocoapods"
 brew "direnv"
-brew "deno" if OS.mac?
 brew "ffmpeg"
 brew "findutils"
 brew "fluxctl"
