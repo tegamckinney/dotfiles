@@ -104,7 +104,7 @@ eval "$(pyenv init -)"
 eval "$(rbenv init - zsh)"
 
 ### prompt: https://starship.rs
-eval $(starship init zsh)
+source <(starship init zsh)
 
 ### completions
 if type brew &>/dev/null && [[ -d $HOMEBREW_PREFIX ]]; then
